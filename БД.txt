@@ -1,0 +1,30 @@
+Categories(Id, Name)
+
+Manufacturers(Id, Name)
+
+OrderItems(OrderNumber, ProductArticleNumber, Quantity)
+
+Orders(OrderNumber, OrderDate, DeliveryDate, PickupPointAddress, Person, PickupCode, StatusId)
+
+OrderStatuses(Id, Name)
+
+Persons(Id, LastName, FirstName, MiddleName)
+
+PickupPoints(Id, Index, Address)
+
+Products(ArticleNumber, ProductName, Unit, Price, Supplier, Manufacturer, ProductCategory, CurrentDiscount, QuantityInStock, ProductDescription, Photo)
+
+Roles(Id, Name)
+
+Suppliers(Id, Name)
+
+Units(Id, Name)
+
+UserAccounts(Id, EmployeeRole, Person, Login, Password)
+
+
+
+ALTER AUTHORIZATION
+ON DATABASE::[ИмяВашейБазы]
+TO sa;
+GO
